@@ -1,0 +1,12 @@
+// SPDX-FileCopyrightText: 2026 Gabriel Santos de Souza <gabriel.santosdesouza@dcomp.ufs.br>
+//
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "blog",
+  "compatibility_date": "2026-09-21",
+  "assets": {
+    "directory": "public"
+  }
+}

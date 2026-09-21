@@ -1,0 +1,14 @@
+# SPDX-FileCopyrightText: 2026 Gabriel Santos de Souza <gabriel.santosdesouza@dcomp.ufs.br>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+baseURL = 'https://blog.gs-101.dev/'
+locale = 'en-us'
+title = 'The Writings'
+
+[module]
+  [[module.imports]]
+    path = 'github.com/ArthurHeymans/hugo-emacs-theme'
+
+[markup.highlight]
+noClasses = false
