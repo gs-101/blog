@@ -1,0 +1,14 @@
+{{- /*
+SPDX-FileCopyrightText: 2026 Gabriel Santos de Souza <gabriel.santosdesouza@dcomp.ufs.br>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+*/ -}}
+<div class="mermaid">
+  {{- .Inner | safeHTML -}}
+</div>
+{{- if not (.Page.Store.Get "hasMermaid") -}}
+  {{- .Page.Store.Set "hasMermaid" true -}}
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  </script>
+{{- end -}}
