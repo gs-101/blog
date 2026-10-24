@@ -1,5 +1,6 @@
 +++
 date = '2026-10-24T11:59:00-03:00'
+images = ['/images/epic-games-blog-image.png']
 tags = ['dream', 'htmx', 'locality-of-behaviour', 'logic', 'markdown', 'typescript', 'vue', 'svelte', 'type-theory', 'web-development']
 title = 'Markdown Oriented Programming'
 +++
