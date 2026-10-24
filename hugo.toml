@@ -12,3 +12,9 @@ title = 'The Writings'
 
 [markup.highlight]
 noClasses = false
+
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['\(', '\)'], ['$', '$']]

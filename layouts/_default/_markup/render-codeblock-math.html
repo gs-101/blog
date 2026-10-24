@@ -1,0 +1,26 @@
+{{- /*
+SPDX-FileCopyrightText: 2026 Gabriel Santos de Souza <gabriel.santosdesouza@dcomp.ufs.br>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+*/ -}}
+<div class="temml-math" data-display="true">{{ .Inner | safeHTML }}</div>
+{{- if not (.Page.Store.Get "hasTemml") -}}
+  {{- .Page.Store.Set "hasTemml" true -}}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/temml/dist/Temml-Latin-Modern.css">
+  <style>
+    .temml-math[data-display="true"] {
+      margin: 1em 0;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/temml/dist/temml.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.temml) {
+        document.querySelectorAll(".temml-math").forEach(function (el) {
+          const isDisplay = el.getAttribute("data-display") === "true";
+          temml.render(el.textContent, el, { displayMode: isDisplay });
+        });
+      }
+    });
+  </script>
+{{- end -}}
