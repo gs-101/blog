@@ -206,4 +206,4 @@ test('Submits trip form with user input', async () => {
 
 Notice that, even in the Vue example, we still have to investigate how the server handles requests, as indicated by that `fetch('/api/v1/trips')` bit. The `EpicStoreKV` model, no matter how convoluted it might be, still surpasses current framework options in this regard.
 
-I still love [HTMX](https://htmx.org/), but it seems my subconscious thirsts for the Holy Grail of Locality of Behaviour.
+I still love [HTMX](https://htmx.org/), but it seems my subconscious is still in search of the Locality of Behaviour Holy Grail.
